@@ -1,0 +1,9 @@
+.hero {
+    background-color: $primary-color;
+
+    &__img {
+        background-image: url("../../images/header-web-developer-portfolio.jpg");
+        height: 600px;
+        opacity: 0.5;
+    }
+}

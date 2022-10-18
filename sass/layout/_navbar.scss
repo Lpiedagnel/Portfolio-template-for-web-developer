@@ -1,0 +1,28 @@
+.navbar {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: flex-end;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 50%;
+        @include container;
+    }
+
+    &__item {
+        padding: 1em;
+        font-size: 1.2em;
+    }
+
+    &__link {
+        color: $secondary-color-light;
+        transition: 0.3s;
+        
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
