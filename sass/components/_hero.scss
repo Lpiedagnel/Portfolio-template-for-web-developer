@@ -1,9 +1,65 @@
 .hero {
-    background-color: $primary-color;
+  background-color: $primary-color;
 
-    &__img {
-        background-image: url("../../images/header-web-developer-portfolio.jpg");
-        height: 600px;
-        opacity: 0.5;
+  &__img {
+    background-image: url("../../images/header-web-developer-portfolio.jpg");
+    height: 600px;
+    opacity: 0.4;
+    background-size: cover;
+    position: relative;
+  }
+
+  &__content {
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  &__name {
+    color: $primary-text;
+    font-size: 2.4em;
+    letter-spacing: 0.5em;
+  }
+
+  &__title {
+    color: $secondary-text;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+  }
+
+  &__hr {
+    border: solid 1px $secondary-text;
+    width: 75%;
+    margin: auto;
+    opacity: 0.4;
+  }
+
+  &__subtitles {
+    color: $primary-text;
+    font-size: 1.3em;
+    font-weight: 400;
+  }
+
+  &__cta {
+    transition: 0.3s;
+    background-color: $tertiary-color;
+    color: $primary-text;
+    padding: 0.8em;
+    letter-spacing: 0.1em;
+    font-size: 1.5em;
+    width: 12em;
+    margin: 1em auto;
+    border-radius: 15px;
+    font-weight: bold;
+
+    &:hover {
+        background-color: $tertiary-color-dark;
     }
+  }
 }
