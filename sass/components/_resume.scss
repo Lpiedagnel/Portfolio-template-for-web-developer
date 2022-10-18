@@ -1,3 +1,33 @@
 .resume {
+  background-color: $primary-color;
 
+  &__container {
+    @include container;
+    padding: 4em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  &__title {
+    color: $tertiary-color;
+    letter-spacing: 0.2em;
+  }
+
+  &__hr {
+    border: solid 1px $tertiary-color;
+    opacity: 0.5;
+    width: 50%;
+  }
+
+  &__degree {
+    color: $primary-text;
+    margin-top: 1em;
+  }
+
+  &__paragraph {
+    padding-left: 2em;
+    color: $secondary-text;
+    font-size: 1.1em;
+  }
 }
