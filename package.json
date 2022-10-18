@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-template-for-web-developer",
+  "version": "1.0.0",
+  "description": "This is the portfolio template I made to create mine. You can use it if you want.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lpiedagnel/Portfolio-template-for-web-developer.git"
+  },
+  "author": "Lucas Piedagnel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lpiedagnel/Portfolio-template-for-web-developer/issues"
+  },
+  "homepage": "https://github.com/Lpiedagnel/Portfolio-template-for-web-developer#readme",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}
