@@ -1,6 +1,25 @@
 /* Cascade fade-in cards */
 
 @keyframes fadeIn {
-    from {opacity: 0%; transform: translate(40px);}
-    to {opacity: 100%; transform: translate(0);}
+  from {
+    opacity: 0%;
+    transform: translate(5%);
+  }
+  to {
+    opacity: 100%;
+    transform: translate(0);
+  }
+}
+
+@mixin lineHover {
+  background-image: linear-gradient($tertiary-color, $tertiary-color);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size ease-in-out 0.5s;
+
+  &:hover {
+    text-decoration: none;
+    background-size: 100% 2px;
+  }
 }
