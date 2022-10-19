@@ -1,5 +1,6 @@
 .hero {
   background-color: $primary-color;
+  box-shadow: 5px 5px 15px $primary-color-dark;
 
   &__img {
     background-image: url("../../images/header-web-developer-portfolio.jpg");

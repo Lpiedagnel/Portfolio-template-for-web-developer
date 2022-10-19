@@ -11,6 +11,17 @@
   }
 }
 
+@keyframes cascade {
+  from {
+    opacity: 0%;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
 @mixin lineHover {
   background-image: linear-gradient($tertiary-color, $tertiary-color);
   background-position: 0% 100%;

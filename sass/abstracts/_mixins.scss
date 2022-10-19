@@ -1,4 +1,13 @@
 @mixin container {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Delay fade-in for each card */
+@mixin animation-delay-cascade {
+  @for $i from 1 through 10 {
+    .skill:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.1}s;
+    }
   }
+}

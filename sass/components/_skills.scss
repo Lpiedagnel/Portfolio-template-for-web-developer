@@ -1,0 +1,24 @@
+.skills {
+  background-color: $primary-color;
+  position: relative;
+  box-shadow: 5px 5px 15px $primary-color-dark;
+
+  &__img {
+    background-image: url("../../images/skills-web-developer-portfolio.jpg");
+    width: 100%;
+    opacity: 0.4;
+    background-size: cover;
+    height: 500px;
+  }
+
+  &__content {
+    @include container;
+    @include animation-delay-cascade;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    bottom: 75px;
+    left: 5%;
+    right: 5%;
+  }
+}
