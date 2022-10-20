@@ -1,0 +1,48 @@
+.projects {
+  background-color: $primary-color-dark;
+  padding: 1em;
+
+  &__container {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 3em;
+  }
+
+  &__title {
+    color: $tertiary-color;
+  }
+
+  &__hr {
+    border: 1px solid $tertiary-color;
+    opacity: 0.5;
+    width: 25%;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4em;
+    margin-top: 2em;
+  }
+
+  &__btn {
+    margin-top: 2em;
+    transition: 0.3s;
+    background-color: $tertiary-color;
+    text-align: center;
+    align-self: flex-end;
+    color: $primary-text;
+    padding: 0.8em;
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+    width: 12em;
+    border-radius: 15px;
+    font-weight: bold;
+
+    &:hover {
+      background-color: $tertiary-color-dark;
+    }
+  }
+}

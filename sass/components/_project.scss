@@ -1,0 +1,48 @@
+.project {
+
+    &__link {
+        background-color: $primary-color;
+        border-radius: 15px;
+        box-shadow: 5px 5px 15px $primary-color-dark;
+        display: flex;
+        flex-direction: row;
+        transition: 0.3s;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $primary-color-light;
+        }
+    }
+
+    &__img {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        gap: 0.5em  ;
+    }
+
+    &__name {
+        color: $tertiary-color;
+        font-size: 1.6em;
+    }
+
+    &__paragraph {
+        color: $primary-text;
+        line-height: 1.7em;
+        font-size: 1.1em;
+    }
+
+    &__cta {
+        color: $tertiary-color;
+        font-weight: bold;
+        transition: 0.3s;
+        align-self: flex-end;
+    }
+}
