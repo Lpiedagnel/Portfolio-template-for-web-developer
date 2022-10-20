@@ -30,11 +30,16 @@
   &__list {
     align-self: flex-start;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em  ;
   }
 
   &__item {
     color: $primary-text;
     font-weight: bold;
     margin: 0.5em;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
   }
 }

@@ -8,7 +8,7 @@
     width: 100%;
     opacity: 0.4;
     background-size: cover;
-    height: 500px;
+    height: 600px;
   }
 
   &__content {
@@ -17,7 +17,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     position: absolute;
-    bottom: 75px;
+    bottom: 100px;
     left: 5%;
     right: 5%;
   }

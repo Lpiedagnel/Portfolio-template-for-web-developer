@@ -4,6 +4,7 @@
 
   &__container {
     @include container;
+    @include animation-delay-cascade;
     display: flex;
     flex-direction: column;
     gap: 1em;
