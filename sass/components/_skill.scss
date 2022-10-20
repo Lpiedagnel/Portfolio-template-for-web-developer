@@ -12,9 +12,9 @@
   opacity: 0;
   animation: cascade 0.6s ease forwards;
 
-  &__img {
-    height: 100px;
-
+  &__icon {
+    color: $tertiary-color;
+    font-size: 2.5em;
   }
 
   &__name {
@@ -22,8 +22,9 @@
   }
 
   &__hr {
-    border: 2px solid $tertiary-color;
+    border: 1px solid $tertiary-color;
     width: 25%;
+    opacity: 0.5;
   }
 
   &__list {
