@@ -1,0 +1,40 @@
+.footer {
+  background-color: $primary-color;
+
+  &__container {
+    @include container;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    font-size: 1.4em;
+    letter-spacing: 0.3em;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+
+  &__link {
+    color: $primary-text;
+    transition: 0.3s;
+
+    &:hover {
+      color: $tertiary-color;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1em;
+    font-size: 3em;
+    align-items: flex-end;
+  }
+}

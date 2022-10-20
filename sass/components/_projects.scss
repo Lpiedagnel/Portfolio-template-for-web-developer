@@ -9,10 +9,12 @@
     flex-direction: column;
     gap: 1em;
     margin-top: 3em;
+    margin-bottom: 3em;
   }
 
   &__title {
     color: $tertiary-color;
+    letter-spacing: 0.2em;
   }
 
   &__hr {
