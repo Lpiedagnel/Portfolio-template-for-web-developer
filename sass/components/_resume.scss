@@ -33,4 +33,18 @@
     color: $secondary-text;
     font-size: 1.1em;
   }
+
+  &__cv {
+    color: $tertiary-color;
+    font-weight: bold;
+    align-self: flex-end;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    margin-top: 0.5em;
+    transition: 0.3s;
+
+    &:hover {
+      color: $tertiary-color-dark;
+    }
+  }
 }
