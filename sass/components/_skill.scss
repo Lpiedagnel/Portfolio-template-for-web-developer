@@ -32,7 +32,7 @@
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 0.5em  ;
+    gap: 0.5em;
   }
 
   &__item {
@@ -41,5 +41,30 @@
     margin: 0.5em;
     font-size: 1.2em;
     letter-spacing: 0.1em;
+  }
+}
+
+@include tablet {
+  .skill {
+    width: 100%;
+    padding: 0.5em;
+
+    &__icon {
+      font-size: 2em;
+    }
+
+    &__name {
+      font-size: 1.4em;
+    }
+
+    &__list {
+      align-self: center;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      font-size: 1em;
+      margin: 0.2em;
+    }
   }
 }

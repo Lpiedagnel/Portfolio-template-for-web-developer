@@ -2,13 +2,15 @@
   background-color: $primary-color;
   position: relative;
   box-shadow: 5px 5px 15px $primary-color-dark;
+  min-height: 600px;
 
   &__img {
     background-image: url("../../images/skills-web-developer-portfolio.jpg");
     width: 100%;
     opacity: 0.4;
     background-size: cover;
-    height: 600px;
+    height: 100%;
+    position: absolute;
   }
 
   &__content {
@@ -17,8 +19,33 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     position: absolute;
-    bottom: 100px;
+    bottom: 15%;
+    top: 15%;
     left: 5%;
     right: 5%;
+  }
+}
+
+@include tablet {
+  .skills {
+    &__content {
+      gap: 2em;
+      top: 17%;
+      bottom: 17%;
+      left: 5%;
+      right: 5%;
+    }
+  }
+}
+
+@include mobile {
+  .skills {
+    height: 1000px;
+    &__content {
+      grid-template-columns: 1fr;
+      gap: 5%;
+      bottom: 5%;
+      top: 5%;
+    }
   }
 }
