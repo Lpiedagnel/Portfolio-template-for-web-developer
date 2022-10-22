@@ -3,6 +3,18 @@
   margin: auto;
 }
 
+// Responsive
+@mixin phone {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
 /* Delay fade-in for each card */
 @mixin animation-delay-cascade {
   @for $i from 1 through 10 {
@@ -11,5 +23,3 @@
     }
   }
 }
-
-
