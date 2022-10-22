@@ -2,13 +2,14 @@
   background-color: $primary-color;
   position: relative;
   box-shadow: 5px 5px 15px $primary-color-dark;
+  height: 600px;
 
   &__img {
     background-image: url("../../images/contact-web-developer.jpg");
     width: 100%;
     opacity: 0.4;
     background-size: cover;
-    height: 600px;
+    height: 100%;
   }
 
   &__content {
@@ -18,7 +19,8 @@
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    bottom: 75px;
+    top: 5%;
+    bottom: 5%;
     left: 5%;
     right: 5%;
   }
@@ -70,6 +72,27 @@
 
     &__icon {
       color: $primary-text;
+    }
+  }
+}
+
+@include tablet {
+  .contact {
+    height: 750px;
+
+    &__content {
+      flex-direction: column;
+    }
+    &__title {
+      text-align: center;
+      margin: auto;
+    }
+    &__container {
+      padding: 1em;
+      width: 85%;
+    }
+    &__link {
+      font-size: 1.5em;
     }
   }
 }

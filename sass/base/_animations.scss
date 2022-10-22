@@ -4,6 +4,7 @@
   from {
     opacity: 0%;
     transform: translate(5%);
+    overflow-x: hidden;
   }
   to {
     opacity: 100%;
@@ -15,6 +16,7 @@
   from {
     opacity: 0%;
     transform: translateY(20px);
+    overflow-x: hidden;
   }
   to {
     opacity: 100%;
@@ -28,6 +30,7 @@
   background-repeat: no-repeat;
   background-size: 0% 2px;
   transition: background-size ease-in-out 0.5s;
+  overflow-x: hidden;
 
   &:hover {
     text-decoration: none;
