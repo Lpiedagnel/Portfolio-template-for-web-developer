@@ -49,3 +49,23 @@
     }
   }
 }
+
+@include tablet {
+  .projects {
+    &__list {
+      gap: 2em;
+    }
+    &__btn {
+      align-self: center;
+    }
+  }
+}
+
+@include mobile {
+  .projects {
+    &__list {
+      grid-template-columns: 1fr;
+      gap: 3em;
+    }
+  }
+}
