@@ -8,4 +8,16 @@ function toggleNavbar() {
     : (navbarList.className = "navbar__list")
 }
 
-navbarHamburger.addEventListener('click', toggleNavbar)
+navbarHamburger.addEventListener("click", toggleNavbar)
+
+// Scroll animation
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    entry.isIntersecting
+      ? entry.target.classList.add("show")
+      : entry.target.classList.remove("show")
+  })
+})
+
+const hiddenElements = document.querySelectorAll(".hidden")
+hiddenElements.forEach((el) => observer.observe(el))

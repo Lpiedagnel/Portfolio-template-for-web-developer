@@ -9,8 +9,12 @@
   padding: 2em;
   width: 250px;
   box-shadow: 5px 5px 15px $primary-color-dark;
-  opacity: 0;
-  animation: cascade 0.6s ease forwards;
+  &:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  &:nth-child(3) {
+    transition-delay: 0.4s;
+  }
 
   &__icon {
     color: $tertiary-color;

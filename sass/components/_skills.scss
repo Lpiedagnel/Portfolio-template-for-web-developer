@@ -15,7 +15,6 @@
 
   &__content {
     @include container;
-    @include animation-delay-cascade;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     position: absolute;

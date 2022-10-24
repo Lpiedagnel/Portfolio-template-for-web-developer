@@ -4,7 +4,6 @@
 
   &__container {
     @include container;
-    @include animation-delay-cascade;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -43,6 +42,7 @@
     width: 12em;
     border-radius: 15px;
     font-weight: bold;
+    transition-delay: 1s;
 
     &:hover {
       background-color: $tertiary-color-dark;

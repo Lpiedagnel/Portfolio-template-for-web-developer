@@ -19,19 +19,20 @@
       src="https://kit.fontawesome.com/ef8b364259.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <!-- Hero -->
     <header class="hero">
       <div class="hero__img"></div>
       <div class="hero__content">
-        <h2 class="hero__name">John DOE</h2>
-        <h1 class="hero__title">Web developer</h1>
-        <hr class="hero__hr" />
-        <h2 class="hero__subtitles">I make websites for your business!</h2>
+        <h2 class="hero__name hidden">John DOE</h2>
+        <h1 class="hero__title hidden">Web developer</h1>
+        <hr class="hero__hr hidden" />
+        <h2 class="hero__subtitles hidden">I make websites for your business!</h2>
         <a
           href="#contact"
-          class="hero__cta"
+          class="hero__cta hidden"
           >Create my website!</a
         >
       </div>
@@ -76,23 +77,23 @@
       id="resume"
     >
       <div class="resume__container">
-        <h3 class="resume__title">Resume</h3>
-        <hr class="resume__hr" />
-        <h4 class="resume__degree">Web Developer Degree - 2022</h4>
-        <p class="resume__paragraph">
+        <h3 class="resume__title hidden">Resume</h3>
+        <hr class="resume__hr hidden" />
+        <h4 class="resume__degree hidden">Web Developer Degree - 2022</h4>
+        <p class="resume__paragraph hidden">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, odio
           saepe corporis inventore dolor alias quidem voluptates ipsa corrupti
           consequuntur adipisci illo, earum qui! Hic eligendi esse doloremque
           alias corporis!
         </p>
-        <h4 class="resume__degree">Manager Degree - 2021</h4>
-        <p class="resume__paragraph">
+        <h4 class="resume__degree hidden">Manager Degree - 2021</h4>
+        <p class="resume__paragraph hidden">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, odio
           saepe corporis inventore dolor alias quidem voluptates ipsa corrupti
           consequuntur adipisci illo, earum qui! Hic eligendi esse doloremque
           alias corporis!
         </p>
-        <a href="#" class="resume__cv" download>See complete resume</a>
+        <a href="#" class="resume__cv hidden" download>See complete resume</a>
       </div>
     </section>
     <!-- Skills -->
@@ -103,7 +104,7 @@
       <div class="skills__img"></div>
       <div class="skills__content">
         <!-- Skill card -->
-        <article class="skill cascade-animation">
+        <article class="skill hidden">
           <i class="skill__icon fas fa-users"></i>
           <h3 class="skill__name">Soft Skills</h3>
           <hr class="skill__hr" />
@@ -115,7 +116,7 @@
           </ul>
         </article>
         <!-- Skill card -->
-        <article class="skill cascade-animation">
+        <article class="skill hidden">
           <i class="skill__icon fas fa-code"></i>
           <h3 class="skill__name">Coding</h3>
           <hr class="skill__hr" />
@@ -127,7 +128,7 @@
           </ul>
         </article>
         <!-- Skill card -->
-        <article class="skill cascade-animation">
+        <article class="skill hidden">
           <i class="skill__icon fab fa-wordpress"></i>
           <h3 class="skill__name">CMS</h3>
           <hr class="skill__hr" />
@@ -146,11 +147,11 @@
       id="projects"
     >
     <div class="projects__container">
-      <h3 class="projects__title">Projects</h3>
-      <hr class="projects__hr" />
+      <h3 class="projects__title hidden">Projects</h3>
+      <hr class="projects__hr hidden" />
       <ul class="projects__list">
           <!-- Project Card -->
-          <li class="project">
+          <li class="project hidden">
             <a
             href="#"
             class="project__link"
@@ -171,7 +172,7 @@
             </a>
           </li>
           <!-- Project Card -->
-          <li class="project cascade-animation">
+          <li class="project hidden">
             <a
             href="#"
             class="project__link"
@@ -192,7 +193,7 @@
             </a>
           </li>
           <!-- Project Card -->
-          <li class="project cascade-animation">
+          <li class="project hidden">
             <a
             href="#"
               class="project__link"
@@ -213,7 +214,7 @@
             </a>
           </li>
           <!-- Project Card -->
-          <li class="project cascade-animation">
+          <li class="project hidden">
             <a
             href="#"
             class="project__link"
@@ -236,23 +237,23 @@
         </ul>
         <a
         href="#"
-        class="projects__btn"
+        class="projects__btn hidden"
         >See all my works</a
         >
       </div>
     </section>
     <!-- Contact -->
     <section
-      class="contact cascade-animation"
+      class="contact"
       id="contact"
     >
       <div class="contact__img"></div>
-      <div class="contact__content">
+      <div class="contact__content hidden">
         <h3 class="contact__title">
-          <span class="contact__need"> Need a website?</span><br />
-          <span class="contact__cta">Contact me!</span>
+          <span class="contact__need hidden"> Need a website?</span><br />
+          <span class="contact__cta hidden">Contact me!</span>
         </h3>
-        <div class="contact__container">
+        <div class="contact__container hidden">
           <ul class="contact__list">
             <li class="contact__item">
               <a
@@ -370,5 +371,5 @@
     </footer>
   </body>
   </html>
-  <script src="script.js"></script>
+  
   

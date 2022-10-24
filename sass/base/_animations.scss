@@ -1,29 +1,4 @@
-/* Cascade fade-in cards */
-
-@keyframes fadeIn {
-  from {
-    opacity: 0%;
-    transform: translate(5%);
-    overflow-x: hidden;
-  }
-  to {
-    opacity: 100%;
-    transform: translate(0);
-  }
-}
-
-@keyframes cascade {
-  from {
-    opacity: 0%;
-    transform: translateY(20px);
-    overflow-x: hidden;
-  }
-  to {
-    opacity: 100%;
-    transform: translateY(0);
-  }
-}
-
+// LineHover on navbar link
 @mixin lineHover {
   background-image: linear-gradient($tertiary-color, $tertiary-color);
   background-position: 0% 100%;
@@ -35,5 +10,27 @@
   &:hover {
     text-decoration: none;
     background-size: 100% 2px;
+  }
+}
+
+// Animation on scroll
+.hidden {
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateX(-5%);
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur();
+  transform: translateX(0);
+}
+
+// Media query for users who don't want animations
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
   }
 }

@@ -28,16 +28,13 @@
     color: $primary-text;
     font-size: 2.4em;
     letter-spacing: 0.5em;
-    animation: fadeIn 1s ease forwards;
-    opacity: 0;
   }
 
   &__title {
     color: $secondary-text;
     font-size: 2em;
     letter-spacing: 0.1em;
-    animation: fadeIn 1s ease forwards 0.2s;
-    opacity: 0;
+    transition-delay: 0.2s;
   }
 
   &__hr {
@@ -45,8 +42,8 @@
     width: 75%;
     margin: auto;
     opacity: 0.4;
-    animation: fadeIn 1s ease forwards 0.4s;
-    opacity: 0;
+    transition-delay: 0.4s;
+
   }
 
   &__subtitles {
@@ -54,8 +51,7 @@
     font-size: 1.5em;
     letter-spacing: 0.2em;
     font-weight: 400;
-    animation: fadeIn 1s ease forwards 0.6s;
-    opacity: 0;
+    transition-delay: 0.6s;
   }
 
   &__cta {
@@ -69,8 +65,7 @@
     margin: 1em auto;
     border-radius: 15px;
     font-weight: bold;
-    animation: fadeIn 1s ease forwards 0.8s;
-    opacity: 0;
+    transition-delay: 1s;
 
     &:hover {
       background-color: $tertiary-color-dark;
